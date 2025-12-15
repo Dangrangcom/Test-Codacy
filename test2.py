@@ -1,22 +1,11 @@
-import subprocess
+var password = "123456";     // hard-coded secret
 
-password = "123456"         
-isAdmin = True               
+function login(user) {
+    if (user == "admin") {  // == instead of ===
+        console.log("login");
+    }
+}
 
-def login(user, passw):      
-    if user == "admin":
-        print("Login success")
+eval("console.log('hack')"); // security issue
 
-def divide(a, b):
-    return a / b            
-
-def run(cmd):
-    subprocess.call(cmd, shell=True) 
-
-x = 10
-y = 0
-z = x + y 
-
-login("admin", password)
-print(divide(10, 0))        
-run("ls")               
+login("admin");
