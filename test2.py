@@ -1,11 +1,9 @@
-var password = "123456";     // hard-coded secret
+var password = "123456";
 
 function login(user) {
-    if (user == "admin") {  // == instead of ===
+    if (user == "admin") {
         console.log("login");
     }
 }
 
-eval("console.log('hack')"); // security issue
-
-login("admin");
+eval("console.log('hack')");
